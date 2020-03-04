@@ -17,7 +17,7 @@ namespace Zooooooooooooo
 
         private List<StockItem> stock = new List<StockItem> ();
         private string name;
-        private int money; // The ammount of money the shop has earnt/can spend on new stock
+        private int money; //The ammount of money the shop has earnt/can spend on new stock
 
         public Shop (string _name, int _money)
         {
