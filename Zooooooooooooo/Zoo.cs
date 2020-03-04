@@ -46,10 +46,12 @@ namespace Zooooooooooooo
                 favouriteAnimal = Console.ReadLine();
                 Console.WriteLine("What is the happiness (/10) of customer" + i);
                 happiness = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("How much money does the customer have?" + i);
+                money = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("What is the age of customer" + i);
                 age = Convert.ToInt32(Console.ReadLine());
 
-                listOfCustomers.Add(new Customer(favouriteAnimal, happiness, age));
+                listOfCustomers.Add(new Customer(favouriteAnimal, happiness, money, age));
                 Console.WriteLine();
             }
 
