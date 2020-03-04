@@ -16,7 +16,7 @@ namespace Zooooooooooooo
         {
             favouriteAnimal = _favouriteAnimal;
             happiness = _happiness;
-            money = _money
+            money = _money;
         }
     }
 }
