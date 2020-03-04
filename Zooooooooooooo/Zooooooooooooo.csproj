@@ -50,6 +50,7 @@
     <Compile Include="Shop.cs" />
     <Compile Include="ShopStaff.cs" />
     <Compile Include="Staff.cs" />
+    <Compile Include="Zoo.cs" />
     <Compile Include="ZooStaff.cs" />
   </ItemGroup>
   <ItemGroup>
