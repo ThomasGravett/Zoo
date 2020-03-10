@@ -10,7 +10,7 @@ namespace Zooooooooooooo
     {
         private int Pricklyness;
 
-        public GiantPricklyStick(double _weight, int _age, int _BA, string _gender, string _FT, string _IE, string _EH, int _hunger, string _name, int _Picklyness, string _enclosureName) : base(_weight, _age, _BA, _gender, _FT, _IE, _EH, _hunger, _name, _enclosureName)
+        public GiantPricklyStick(double _weight, int _age, int _BA, string _gender, string _FT, string _IE, string _EH, int _hunger, string _name, int _Picklyness, string _enclosureName) : base(_weight, _age, _BA, _gender, _FT, _IE, _EH, _hunger, _name, _enclosureName, "Giant prickly stick")
         {
             Pricklyness = _Picklyness;
         }
