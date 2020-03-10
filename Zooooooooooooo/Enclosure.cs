@@ -8,13 +8,15 @@ namespace Zooooooooooooo
 {
     class Enclosure
     {
+        private string name;
         private int size;
         private int temperature;
         private int humidity;
         private string environmentType;
 
-        public Enclosure (int _size, int _temperature, int _humidity, string _environmentType)
+        public Enclosure (string _name, int _size, int _temperature, int _humidity, string _environmentType)
         {
+            name = _name;
             size = _size;
             temperature = _temperature;
             humidity = _humidity;
@@ -23,6 +25,7 @@ namespace Zooooooooooooo
 
         public void Print ()
         {
+            Console.WriteLine("name: " + name);
             Console.WriteLine("Size: " + size);
             Console.WriteLine("Temperature: " + temperature);
             Console.WriteLine("Humidity: " + humidity);

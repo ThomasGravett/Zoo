@@ -19,8 +19,9 @@ namespace Zooooooooooooo
         private string IdealEnvironment;
         private string EatingHabbit;
         private int Hunger;
+        private string enclosureName;
 
-        public Animal(double _weight, int _age, int _BA, string _gender, string _FT, string _IE, string _EH, int _hunger, string _name)
+        public Animal(double _weight, int _age, int _BA, string _gender, string _FT, string _IE, string _EH, int _hunger, string _name, string _enclosureName)
         {
             Weight = _weight;
             Age = _age;
@@ -31,6 +32,7 @@ namespace Zooooooooooooo
             EatingHabbit = _EH;
             Hunger = _hunger;
             Name = _name;
+            enclosureName = _enclosureName;
 
             AnimalCount++;
         }
@@ -39,6 +41,7 @@ namespace Zooooooooooooo
         {
             Console.WriteLine("Animal Information:\n-------------------");
             Console.WriteLine("Name: " + Name);
+            Console.WriteLine("Enclosure: " + enclosureName);
             Console.WriteLine("Age: " + Age);
             Console.WriteLine("Weight: " + Weight + "Kg");
             Console.WriteLine("Gender: " + Gender);
@@ -73,6 +76,12 @@ namespace Zooooooooooooo
             {
                 Console.WriteLine(Name + " is old enough to breed.");
             }
+        }
+
+        public void ChangeEnclosure(string _enclosureName)
+        {
+            enclosureName = _enclosureName;
+            Console.WriteLine("Successfully moved enclosure");
         }
     }
 }
