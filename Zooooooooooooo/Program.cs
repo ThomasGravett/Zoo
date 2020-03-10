@@ -162,6 +162,7 @@ namespace Zooooooooooooo
 
         static void Main(string[] args)
         {
+<<<<<<< HEAD
             Zebra zebra = new Zebra(5, 9, 10, "Male", "Grass", "GrassLand", "Daily", 10, "Jeff", 25);
             zebra.Print();
             zebra.PrintZebra();
@@ -194,6 +195,9 @@ namespace Zooooooooooooo
 
 
             Console.ReadKey();
+=======
+
+>>>>>>> 0f825dce0544c808fa79f8a20004c152ee9e896e
         }
     }
 }
