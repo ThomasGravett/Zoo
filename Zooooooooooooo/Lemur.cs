@@ -10,7 +10,7 @@ namespace Zooooooooooooo
     {
         private int SingingAbility;
 
-        public Lemur(double _weight, int _age, int _BA, string _gender, string _FT, string _IE, string _EH, int _hunger, string _name, int _SA) : base(_weight, _age, _BA, _gender, _FT, _IE, _EH, _hunger, _name)
+        public Lemur(double _weight, int _age, int _BA, string _gender, string _FT, string _IE, string _EH, int _hunger, string _name, int _SA, string _enclosureName) : base(_weight, _age, _BA, _gender, _FT, _IE, _EH, _hunger, _name, _enclosureName)
         {
             SingingAbility = _SA;
         }

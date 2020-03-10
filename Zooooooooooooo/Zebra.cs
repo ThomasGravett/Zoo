@@ -10,7 +10,7 @@ namespace Zooooooooooooo
     {
         private int NumberOfStripes;
 
-        public Zebra(double _weight, int _age, int _BA, string _gender, string _FT, string _IE, string _EH, int _hunger, string _name, int _NoS) : base(_weight, _age, _BA, _gender, _FT, _IE, _EH, _hunger, _name)
+        public Zebra(double _weight, int _age, int _BA, string _gender, string _FT, string _IE, string _EH, int _hunger, string _name, int _NoS, string _enclosureName) : base(_weight, _age, _BA, _gender, _FT, _IE, _EH, _hunger, _name, _enclosureName)
         {
             NumberOfStripes = _NoS;
         }
