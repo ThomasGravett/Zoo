@@ -10,7 +10,7 @@ namespace Zooooooooooooo
     {
         private int Cuteness;
 
-        public AsianGoldenCat(string _enclosureName, double _weight, int _age, int _BA, string _gender, string _FT, string _IE, string _EH, int _hunger, string _name, int _cuteness) : base(_weight, _age, _BA, _gender, _FT, _IE, _EH, _hunger, _name, _enclosureName, "Asian golden Cat")
+        public AsianGoldenCat(string _enclosureName, double _weight, int _age, int _BA, string _gender, string _FT, string _IE, string _EH, int _hunger, string _name, int _cuteness, int _maxTemp, int _minTemp) : base(_weight, _age, _BA, _gender, _FT, _IE, _EH, _hunger, _name, _enclosureName, "Asian golden Cat", _maxTemp, _minTemp)
         {
             Cuteness = _cuteness;
         }

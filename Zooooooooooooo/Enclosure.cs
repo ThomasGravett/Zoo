@@ -34,5 +34,15 @@ namespace Zooooooooooooo
             Console.WriteLine("Environment type: " + environmentType);
             Console.WriteLine();
         }
+
+        public string GetName()
+        {
+            return name;
+        }
+
+        public int GetTemperature()
+        {
+            return temperature;
+        }
     }
 }

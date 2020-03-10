@@ -11,6 +11,8 @@ namespace Zooooooooooooo
 
         static void Main(string[] args)
         {
+            List<Enclosure> enclosures = new List<Enclosure>;
+
 //<<<<<<< HEAD
             Zebra zebra = new Zebra(5, 9, 10, "Male", "Grass", "GrassLand", "Daily", 10, "Jeff", 25, "Brian");
             zebra.Print();

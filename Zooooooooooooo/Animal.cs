@@ -21,10 +21,10 @@ namespace Zooooooooooooo
         private string EatingHabbit;
         private int Hunger;
         private string enclosureName;
+        private int maxTemp;
+        private int minTemp; //(If outside these boundaries go to vet)
 
-        //maxTemp, minTemp (If outside these boundaries go to vet)
-
-        public Animal(double _weight, int _age, int _BA, string _gender, string _FT, string _IE, string _EH, int _hunger, string _name, string _enclosureName, string _species)
+        public Animal(double _weight, int _age, int _BA, string _gender, string _FT, string _IE, string _EH, int _hunger, string _name, string _enclosureName, string _species, int _maxTemp, int _minTemp)
         {
             Weight = _weight;
             Age = _age;
@@ -37,6 +37,8 @@ namespace Zooooooooooooo
             Name = _name;
             enclosureName = _enclosureName;
             species = _species;
+            maxTemp = _maxTemp;
+            minTemp = _minTemp;
 
             AnimalCount++;
         }
@@ -83,8 +85,18 @@ namespace Zooooooooooooo
             }
         }
 
-        public void ChangeEnclosure(string _enclosureName)
+        public void ChangeEnclosure(string _enclosureName, List<Enclosure> enclosures)
         {
+            for (int i = 0; i < enclosures.Count; i++)
+            {
+                if (enclosures[i].GetName() == _enclosureName)
+                {
+                    if (enclosures[i].GetTemperature() < minTemp)
+                    {
+                        //need to complete
+                    }
+                }
+            }
             enclosureName = _enclosureName;
             Console.WriteLine("Successfully moved enclosure");
         }
