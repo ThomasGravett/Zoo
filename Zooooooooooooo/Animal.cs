@@ -22,6 +22,8 @@ namespace Zooooooooooooo
         private int Hunger;
         private string enclosureName;
 
+        //maxTemp, minTemp (If outside these boundaries go to vet)
+
         public Animal(double _weight, int _age, int _BA, string _gender, string _FT, string _IE, string _EH, int _hunger, string _name, string _enclosureName, string _species)
         {
             Weight = _weight;

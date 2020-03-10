@@ -12,6 +12,8 @@ namespace Zooooooooooooo
         private int happiness;
         private int money;
 
+        //method to buy stuff from gift shop
+
         public Customer(string _favouriteAnimal, int _happiness, int _money, int _age) : base(_age)
         {
             favouriteAnimal = _favouriteAnimal;
