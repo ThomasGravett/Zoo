@@ -12,7 +12,7 @@ namespace Zooooooooooooo
         static void Main(string[] args)
         {
 //<<<<<<< HEAD
-            Zebra zebra = new Zebra(5, 9, 10, "Male", "Grass", "GrassLand", "Daily", 10, "Jeff", 25);
+            Zebra zebra = new Zebra(5, 9, 10, "Male", "Grass", "GrassLand", "Daily", 10, "Jeff", 25, "Brian");
             zebra.Print();
             zebra.PrintZebra();
             zebra.Eat();
@@ -20,7 +20,7 @@ namespace Zooooooooooooo
 
             Console.WriteLine("\n------------------------------\n\n");
 
-            GiantPricklyStick giantPricklyStick = new GiantPricklyStick(2, 10, 5, "Female", "Leaves", "Tree", "Daily", 2, "Barbra", 10);
+            GiantPricklyStick giantPricklyStick = new GiantPricklyStick(2, 10, 5, "Female", "Leaves", "Tree", "Daily", 2, "Barbra", 10, "Brian");
             giantPricklyStick.Print();
             giantPricklyStick.PrintStick();
             giantPricklyStick.Eat();
@@ -28,7 +28,7 @@ namespace Zooooooooooooo
 
             Console.WriteLine("\n------------------------------\n\n");
 
-            Lemur lemur = new Lemur(5, 15, 8, "Male", "Grass", "Madagascar", "Daily", 10, "Julian", 11);
+            Lemur lemur = new Lemur(5, 15, 8, "Male", "Grass", "Madagascar", "Daily", 10, "Julian", 11, "Brian");
             lemur.Print();
             lemur.PrintLemur();
             lemur.Eat();
@@ -36,7 +36,7 @@ namespace Zooooooooooooo
 
             Console.WriteLine("\n------------------------------\n\n");
 
-            AsianGoldenCat asianGoldenCat = new AsianGoldenCat(10, 20, 12, "Female", "Meat", "GrassLand", "Daily", 10, "Fluff", 9);
+            AsianGoldenCat asianGoldenCat = new AsianGoldenCat("Brian",10, 20, 12, "Female", "Meat", "GrassLand", "Daily", 10, "Fluff", 9);
             asianGoldenCat.Print();
             asianGoldenCat.PrintCat();
             asianGoldenCat.Eat();
