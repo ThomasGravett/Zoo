@@ -87,18 +87,29 @@ namespace Zooooooooooooo
 
         public void ChangeEnclosure(string _enclosureName, List<Enclosure> enclosures)
         {
+            Boolean temp = false;
+
             for (int i = 0; i < enclosures.Count; i++)
             {
                 if (enclosures[i].GetName() == _enclosureName)
                 {
-                    if (enclosures[i].GetTemperature() < minTemp)
+                    if (enclosures[i].GetTemperature() < minTemp && enclosures[i].GetTemperature() > maxTemp)
                     {
-                        //need to complete
+                        Console.WriteLine(Name + " can't stand the temperature of this enclosure.");
                     }
+                    else
+                    {
+                        enclosureName = _enclosureName;
+                        Console.WriteLine(Name + " has been transferred successfully");
+                    }
+                    temp = true;
                 }
             }
-            enclosureName = _enclosureName;
-            Console.WriteLine("Successfully moved enclosure");
+
+            if (temp == false)
+            {
+                Console.WriteLine("The enclosure " + _enclosureName + " can't be found");
+            }
         }
     }
 }
