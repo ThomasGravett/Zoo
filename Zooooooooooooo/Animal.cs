@@ -20,11 +20,11 @@ namespace Zooooooooooooo
         private string IdealEnvironment;
         private string EatingHabbit;
         private int Hunger;
-        private string enclosureName;
+        private Enclosure enclosureName;
         private int maxTemp;
         private int minTemp; //(If outside these boundaries go to vet)
 
-        public Animal(double _weight, int _age, int _BA, string _gender, string _FT, string _IE, string _EH, int _hunger, string _name, string _enclosureName, string _species, int _maxTemp, int _minTemp)
+        public Animal(double _weight, int _age, int _BA, string _gender, string _FT, string _IE, string _EH, int _hunger, string _name, Enclosure _enclosureName, string _species, int _maxTemp, int _minTemp)
         {
             Weight = _weight;
             Age = _age;
@@ -99,8 +99,12 @@ namespace Zooooooooooooo
                     }
                     else
                     {
-                        enclosureName = _enclosureName;
+                        Animal temp2;
+                        temp2 = enclosureName.LoseAnimal(Name);
+
+                        enclosureName = enclosures[i];
                         Console.WriteLine(Name + " has been transferred successfully");
+                        enclosureName.AddAnimal(temp2);
                     }
                     temp = true;
                 }
@@ -110,6 +114,11 @@ namespace Zooooooooooooo
             {
                 Console.WriteLine("The enclosure " + _enclosureName + " can't be found");
             }
+        }
+        
+        public string GetName()
+        {
+            return Name;
         }
     }
 }
