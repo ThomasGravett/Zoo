@@ -12,13 +12,21 @@ namespace Zooooooooooooo
         private int happiness;
         private int money;
 
-        //method to buy stuff from gift shop
-
         public Customer(string _favouriteAnimal, int _happiness, int _money, int _age) : base(_age)
         {
             favouriteAnimal = _favouriteAnimal;
             happiness = _happiness;
             money = _money;
+        }
+
+        public void Buy(Shop _shop, string _name, int _ammount)
+        {
+            int price = _shop.GetPrice(_name);
+
+            if (price <= money)
+            {
+                _shop.Sell(_name, _ammount);
+            }
         }
     }
 }

@@ -25,6 +25,21 @@ namespace Zooooooooooooo
             money = _money;
         }
 
+        public int GetPrice (string _name)
+        {
+            int temp = 0;
+
+            for (int i = 0; i < stock.Count; i++)
+            {
+                if (stock[i].name == _name)
+                {
+                    temp = stock[i].price;
+                }
+            }
+
+            return temp;
+        }
+
         public void AddStock (string _name, int _ammount, int _price, int _cost)
         {
             Boolean add = true;
