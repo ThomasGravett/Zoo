@@ -16,8 +16,6 @@ namespace Zooooooooooooo
         private string environmentType;
         private List<Animal> animals;
 
-        //environment cost (to run) to put more strain on the zoos budget
-
         public Enclosure (string _name, int _size, int _temperature, int _humidity, string _environmentType)
         {
             name = _name;
