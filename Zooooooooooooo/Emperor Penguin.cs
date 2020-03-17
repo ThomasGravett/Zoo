@@ -22,6 +22,40 @@ namespace Zooooooooooooo
             Console.WriteLine("Dancing ability: " + DancingAbility + "/10");
             Console.WriteLine("Spying ablility: " + SpyingAbility + "/10\n");
         }
+
+        public void Dance()
+        {
+            //Ascii Art from https://textart.io/art/BJIy6PAHx28VEInIrj8ALQeF/dancing-penguin
+            Console.WriteLine("                                    (\"r ^ ^^-.");
+            Console.WriteLine("                                    | `-_   \",_");
+            Console.WriteLine("                                  _ - '`+-_ `--`/");
+            Console.WriteLine("                                , '_-     ``--\\");
+            Console.WriteLine("                               (-_ ^ (\\:/)");
+            Console.WriteLine("                               (-^^^^^\\");
+            Console.WriteLine("                 _.-- ^ ^^-._     \\-_,._  ` `.");
+            Console.WriteLine("              .-'        ` `._   )-   ( <._^`-.  `.");
+            Console.WriteLine("          _.- '                `-_|- _  /^^ `^^^`-. `.");
+            Console.WriteLine("        ({  |    \\ /   /      //-_-_+ /           `. \\");
+            Console.WriteLine("         \\\\   _.-- -.          \\\\+-_ + _`}`-._         `.\\");
+            Console.WriteLine("           `\"\")   .^\\    \\__..-^     `-_        `\\");
+            Console.WriteLine("                    .   )  \\                  `.");
+            Console.WriteLine("                   }   / /\\ `.....         ,    \\");
+            Console.WriteLine("                  ;  _/ /  `--. _/   .'^`-..-    )");
+            Console.WriteLine("                 ((  /     / /  _-'     ;     /");
+            Console.WriteLine("                ( `. ``     / /  /       /._   /");
+            Console.WriteLine("             __/ `. `._(_(  /^.     (, ,`./");
+            Console.WriteLine("       _-:::::(    `._ `-......`,` ^.    ``--'");
+            Console.WriteLine("      <::::::::\\      `-......-`   /:|.");
+            Console.WriteLine("      < _`:;;::-\\                .|:::/^.");
+            Console.WriteLine("       \\  ^      `-.__ __..--<:;,'^.  `.          _");
+            Console.WriteLine("        \\  \\          ^^^^             `.  `.       / | /\\");
+            Console.WriteLine("         )` `.                           `. .`-.   (  // / _");
+            Console.WriteLine("         ) \\\\ \\                            `. / `._/ // /.' }");
+            Console.WriteLine(" /^`-..'^ `_``_`^-.                         ( / _-_ <  /  _-'");
+            Console.WriteLine("<__ _..._--_..__- )                     __\\ -_-_-.-_.-'");
+            Console.WriteLine("    ^^     ^^     ^^                      /'   ___.---'");
+            Console.WriteLine("                                         <.--''");
+        }
     }
 
 }
