@@ -12,10 +12,10 @@ namespace Zooooooooooooo
         private int size;
         private int temperature;
         private int humidity;
+        private int cost;
         private string environmentType;
         private List<Animal> animals;
 
-        //The enclosure knows what animals are in it (To make it easier to get animals to interact if we decide to do this)
         //environment cost (to run) to put more strain on the zoos budget
 
         public Enclosure (string _name, int _size, int _temperature, int _humidity, string _environmentType)
@@ -25,6 +25,30 @@ namespace Zooooooooooooo
             temperature = _temperature;
             humidity = _humidity;
             environmentType = _environmentType;
+            CalculateCost();
+        }
+
+        public void CalculateCost()
+        {
+            cost = 1 * size;
+
+            if (temperature >= 20)
+            {
+                cost = cost + ((temperature - 20) * 3);
+            }
+            else
+            {
+                cost = cost + ((20 - temperature) * 2);
+            }
+
+            if (humidity >= 50)
+            {
+                cost = cost + ((humidity - 50) * 5);
+            }
+            else
+            {
+                cost = cost + ((50 - humidity) * 4);
+            }
         }
 
         public void Print ()
