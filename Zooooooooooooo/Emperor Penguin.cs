@@ -11,7 +11,7 @@ namespace Zooooooooooooo
         private int DancingAbility;
         private int SpyingAbility;
 
-        public EmperorPenguin(double _weight, int _age, int _BA, string _gender, string _FT, string _IE, string _EH, int _hunger, string _name, int _DA, int _SpA, string _enclosureName, int _maxTemp, int _minTemp) : base(_weight, _age, _BA, _gender, _FT, _IE, _EH, _hunger, _name, _enclosureName, "Emperor penguin", _maxTemp, _minTemp)
+        public EmperorPenguin(double _weight, int _age, int _BA, string _gender, string _FT, string _IE, string _EH, int _hunger, string _name, int _DA, int _SpA, Enclosure _enclosureName, int _maxTemp, int _minTemp) : base(_weight, _age, _BA, _gender, _FT, _IE, _EH, _hunger, _name, _enclosureName, "Emperor penguin", _maxTemp, _minTemp)
         {
             DancingAbility = _DA;
             SpyingAbility = _SpA;
